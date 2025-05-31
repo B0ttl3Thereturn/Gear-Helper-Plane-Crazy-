@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gear Offset Calculator</title>
+</head>
+<body>
+
+  <!-- Input for gear teeth -->
+  <label>How many teeth does your gear have?</label>
+  <input id="teethInput" type="number" />
+  <button onclick="calculateAngles()">Calculate Angles</button>
+
+  <!-- Show angle results -->
+  <div id="angleResult"></div>
+  <div id="halfAngleResult"></div>
+
+  <!-- Input for offset -->
+  <label>What’s the current offset?</label>
+  <input id="offsetInput" type="number" />
+  <button onclick="calculateOffset()">Calculate Offset</button>
+
+  <!-- Show offset result -->
+  <div id="offsetResult"></div>
+
+  <!-- Button to copy -->
+  <button onclick="copyToClipboard()">Copy Result</button>
+  <div id="copyMessage"></div>
+
+  <script>
+    // Write your angle calculation here:
+    function calculateAngles() {
+      // 1. Get teeth value from the input
+      // 2. Validate it's a number
+      // 3. Compute angle = 360 / teeth
+      // 4. Compute half-angle
+      // 5. Update angleResult and halfAngleResult divs
+    }
+
+    function calculateOffset() {
+      // 1. Get offset and previously calculated angle
+      // 2. Do the trigonometry math (cos/sin stuff)
+      // 3. Display the result in offsetResult div
+    }
+
+    function copyToClipboard() {
+      // 1. Get the offset result text
+      // 2. Use navigator.clipboard.writeText()
+      // 3. Show a success message
+    }
+  </script>
+
+</body>
+</html>
