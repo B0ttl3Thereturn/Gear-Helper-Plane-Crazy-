@@ -217,7 +217,7 @@
     }
 
     function copyValue(id) {
-      const value = document.getElementById(id).textContent;
+      const value = document.getElementById(id).textContent?.split(":")?.[1]?.trim();
       if (!value) {
         document.getElementById("copyMessage").textContent = "⚠️ Nothing to copy.";
         return;
